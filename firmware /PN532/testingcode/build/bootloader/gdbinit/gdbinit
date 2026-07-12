@@ -1,0 +1,2 @@
+source /Users/apple/PLATYPULSE/firmware /PN532/testingcode/build/bootloader/gdbinit/symbols
+source /Users/apple/PLATYPULSE/firmware /PN532/testingcode/build/bootloader/gdbinit/connect
