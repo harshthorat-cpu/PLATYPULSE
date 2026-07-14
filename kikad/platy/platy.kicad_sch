@@ -13956,12 +13956,6 @@
 		(uuid "1c53a1b8-1cbb-4ba4-b7ab-8852cbfcda28")
 	)
 	(junction
-		(at 332.74 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "22659878-8f30-401e-bb32-6d1eeb2627df")
-	)
-	(junction
 		(at 697.23 256.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -14266,6 +14260,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b432c7fd-a835-4ed8-ab1d-57432fdd010a")
+	)
+	(junction
+		(at 346.71 250.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b68837a0-74bd-44d3-8e13-3ace05f9eac8")
 	)
 	(junction
 		(at 410.21 252.73)
@@ -15136,6 +15136,16 @@
 			(type default)
 		)
 		(uuid "0c22174d-cff0-4d64-8894-3430e22d0214")
+	)
+	(wire
+		(pts
+			(xy 346.71 250.19) (xy 350.52 250.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c26fce7-76d0-4798-95b1-9f068daaf51c")
 	)
 	(wire
 		(pts
@@ -16099,7 +16109,7 @@
 	)
 	(wire
 		(pts
-			(xy 342.9 250.19) (xy 350.52 250.19)
+			(xy 342.9 250.19) (xy 346.71 250.19)
 		)
 		(stroke
 			(width 0)
@@ -17939,7 +17949,7 @@
 	)
 	(wire
 		(pts
-			(xy 332.74 137.16) (xy 332.74 139.7)
+			(xy 332.74 137.16) (xy 332.74 140.97)
 		)
 		(stroke
 			(width 0)
@@ -18096,16 +18106,6 @@
 			(type default)
 		)
 		(uuid "8222616a-953d-4575-acb2-2cc7653df766")
-	)
-	(wire
-		(pts
-			(xy 332.74 139.7) (xy 332.74 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "828715a5-0be0-4acd-8411-08544b19b875")
 	)
 	(wire
 		(pts
@@ -31551,7 +31551,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 332.74 139.7 90)
+		(at 346.71 250.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -31561,7 +31561,7 @@
 		(dnp no)
 		(uuid "728cd12a-fc4c-4c88-beaf-c239d35a1164")
 		(property "Reference" "#FLG01"
-			(at 330.835 139.7 0)
+			(at 346.71 248.285 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31572,7 +31572,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 324.358 139.7 90)
+			(at 346.71 245.364 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31582,7 +31582,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 332.74 139.7 0)
+			(at 346.71 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31593,7 +31593,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 332.74 139.7 0)
+			(at 346.71 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31604,7 +31604,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 332.74 139.7 0)
+			(at 346.71 250.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34108,7 +34108,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "975fd6f7-5f43-4f37-b5ca-874d2486f234")
+		(uuid "975fd6f7-5f43-4f37-b5ca-874d2486f235")
 		(property "Reference" "#PWR086"
 			(at 624.84 289.56 0)
 			(hide yes)
@@ -34164,7 +34164,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "15332fcc-75f2-4c4b-a07f-394a66dfeb6e")
+			(uuid "15332fcc-75f2-4c4b-a07f-394a66dfeb6f")
 		)
 		(instances
 			(project "platy"
