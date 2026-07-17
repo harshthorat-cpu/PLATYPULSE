@@ -1,0 +1,2 @@
+source /Users/apple/PLATYPULSE/firmware /IR/ir_transmitter/build/bootloader/gdbinit/symbols
+source /Users/apple/PLATYPULSE/firmware /IR/ir_transmitter/build/bootloader/gdbinit/connect

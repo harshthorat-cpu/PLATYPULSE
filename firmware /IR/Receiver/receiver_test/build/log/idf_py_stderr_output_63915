@@ -1,0 +1,60 @@
+Command: ninja flash
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/apple/.espressif/python_env/idf5.5_py3.14_env/lib/python3.14/site-packages/esptool/__main__.py", line 9, in <module>
+    esptool._main()
+    ~~~~~~~~~~~~~^^
+  File "/Users/apple/.espressif/python_env/idf5.5_py3.14_env/lib/python3.14/site-packages/esptool/__init__.py", line 1365, in _main
+    main()
+    ~~~~^^
+  File "/Users/apple/.espressif/python_env/idf5.5_py3.14_env/lib/python3.14/site-packages/esptool/__init__.py", line 1069, in main
+    operation_func(esp, args)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/apple/.espressif/python_env/idf5.5_py3.14_env/lib/python3.14/site-packages/esptool/cmds.py", line 615, in write_flash
+    if not esp.secure_download_mode and not esp.get_secure_boot_enabled():
+                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/apple/.espressif/python_env/idf5.5_py3.14_env/lib/python3.14/site-packages/esptool/targets/esp32.py", line 190, in get_secure_boot_enabled
+    rev = self.get_chip_revision()
+  File "/Users/apple/.espressif/python_env/idf5.5_py3.14_env/lib/python3.14/site-packages/esptool/targets/esp32.py", line 202, in get_chip_revision
+    return self.get_major_chip_version() * 100 + self.get_minor_chip_version()
+                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/apple/.espressif/python_env/idf5.5_py3.14_env/lib/python3.14/site-packages/esptool/targets/esp32.py", line 205, in get_minor_chip_version
+    return (self.read_efuse(5) >> 24) & 0x3
+            ~~~~~~~~~~~~~~~^^^
+  File "/Users/apple/.espressif/python_env/idf5.5_py3.14_env/lib/python3.14/site-packages/esptool/targets/esp32.py", line 313, in read_efuse
+    return self.read_reg(self.EFUSE_RD_REG_BASE + (4 * n))
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/.espressif/python_env/idf5.5_py3.14_env/lib/python3.14/site-packages/esptool/loader.py", line 883, in read_reg
+    return self.check_command(
+           ~~~~~~~~~~~~~~~~~~^
+        "read target memory", self.ESP_READ_REG, command, timeout=timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/apple/.espressif/python_env/idf5.5_py3.14_env/lib/python3.14/site-packages/esptool/loader.py", line 547, in check_command
+    val, data = self.command(op, data, chk, timeout=timeout)
+                ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/.espressif/python_env/idf5.5_py3.14_env/lib/python3.14/site-packages/esptool/loader.py", line 453, in command
+    self._port.timeout = new_timeout
+    ^^^^^^^^^^^^^^^^^^
+  File "/Users/apple/.espressif/python_env/idf5.5_py3.14_env/lib/python3.14/site-packages/serial/serialutil.py", line 372, in timeout
+    self._reconfigure_port()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/apple/.espressif/python_env/idf5.5_py3.14_env/lib/python3.14/site-packages/serial/serialposix.py", line 517, in _reconfigure_port
+    termios.tcsetattr(
+    ~~~~~~~~~~~~~~~~~^
+        self.fd,
+        ^^^^^^^^
+        termios.TCSANOW,
+        ^^^^^^^^^^^^^^^^
+        [iflag, oflag, cflag, lflag, ispeed, ospeed, cc])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+termios.error: (22, 'Invalid argument')
+CMake Error at run_serial_tool.cmake:67 (message):
+  
+  /Users/apple/.espressif/python_env/idf5.5_py3.14_env/bin/python;;/Users/apple/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32
+  failed.
+
+
+

@@ -1,0 +1,161 @@
+Command: /Users/apple/.espressif/python_env/idf5.5_py3.14_env/bin/python /Users/apple/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbserial-0001 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /Users/apple/PLATYPULSE/firmware /IR/Receiver/receiver_test/build/receiver_test.elf /Users/apple/PLATYPULSE/firmware /IR/Receiver/receiver_test/build/bootloader/bootloader.elf -m '/Users/apple/.espressif/python_env/idf5.5_py3.14_env/bin/python' '/Users/apple/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 10 2026 01:37:40[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a240h ( 41536) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=0001a268 vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001c668 vaddr=40080000 size=039b0h ( 14768) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14524h ( 83236) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=0003454c vaddr=400839b0 size=09600h ( 38400) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003db54 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (164) boot: Disabling RNG early entropy source...[0m
+[0;32mI (175) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (184) app_init: Application information:[0m
+[0;32mI (184) app_init: Project name:     receiver_test[0m
+[0;32mI (188) app_init: App version:      b061112-dirty[0m
+[0;32mI (193) app_init: Compile time:     Jul 10 2026 01:36:42[0m
+[0;32mI (198) app_init: ELF file SHA256:  b59feb8fd...[0m
+[0;32mI (202) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (229) heap_init: At 3FFB2CC0 len 0002D340 (180 KiB): DRAM[0m
+[0;32mI (234) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (240) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (245) heap_init: At 4008CFB0 len 00013050 (76 KiB): IRAM[0m
+[0;33mW (252) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (263) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[0;32mI (323) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (433) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (543) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (653) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (763) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (873) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (983) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (1093) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (1203) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (1313) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (1423) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (1533) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (1643) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (1753) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (1863) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (1973) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (2083) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (2193) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (2303) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (2413) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (2523) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (2633) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (2743) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (2853) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (2963) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (3073) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (3183) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (3293) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (3403) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (3513) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (3623) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (3733) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (3843) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (3953) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (4063) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (4173) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (4283) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (4393) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (4503) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (4613) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (4723) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (4833) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (4943) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (5053) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (5163) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (5273) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (5383) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (5493) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (5603) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (5713) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (5823) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (5933) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (6043) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (6153) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (6263) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (6373) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (6483) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (6593) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (6703) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (6813) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (6923) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (7033) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (7143) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (7253) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (7363) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (7473) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (7583) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (7693) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (7803) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (7913) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (8023) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (8133) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (8243) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (8353) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (8463) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (8573) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (8683) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (8793) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (8903) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (9013) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (9123) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (9233) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (9343) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (9453) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (9563) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (9673) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (9783) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (9893) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (10003) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (10113) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (10223) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (10333) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (10443) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (10553) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (10663) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (10773) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (10883) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (10993) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (11103) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (11213) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (11323) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (11433) IR_RECEIVER: IR Signal Detected[0m
+[0;32mI (11543) IR_RECEIVER: IR Signal Detected[0m

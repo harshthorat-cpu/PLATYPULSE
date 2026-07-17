@@ -1,0 +1,2 @@
+source /Users/apple/PLATYPULSE/firmware /IR/Receiver/receiver_test/build/gdbinit/symbols
+source /Users/apple/PLATYPULSE/firmware /IR/Receiver/receiver_test/build/gdbinit/connect
