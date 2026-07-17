@@ -17,7 +17,7 @@ static const char *TAG = "IR_STORE_EMIT";
 
 static QueueHandle_t rx_queue;
 
-// Memory to permanently store the recorded signal
+
 static rmt_symbol_word_t stored_symbols[MAX_RECV_SYMBOLS];
 static int stored_symbol_count = 0;
 
@@ -76,9 +76,7 @@ void app_main(void)
 
     while (1) {
         if (stored_symbol_count == 0) {
-            // ==========================================
-            // PHASE 1: RECORD MODE
-            // ==========================================
+       
             rmt_receive_config_t receive_config = {
                 .signal_range_min_ns = 1250,      
                 .signal_range_max_ns = 40000000,  
@@ -89,20 +87,18 @@ void app_main(void)
 
             rmt_rx_done_event_data_t rx_data;
             if (xQueueReceive(rx_queue, &rx_data, portMAX_DELAY)) {
-                // Copy the temporary data into our permanent storage array
+              
                 stored_symbol_count = rx_data.num_symbols;
                 memcpy(stored_symbols, temp_symbols, stored_symbol_count * sizeof(rmt_symbol_word_t));
                 
                 ESP_LOGI(TAG, "Signal saved! Captured %d symbols.", stored_symbol_count);
                 
-                // Disable the RX channel so we don't accidentally record over it
+                
                 rmt_disable(rx_chan); 
             }
         } 
         else {
-            // ==========================================
-            // PHASE 2: EMULATE MODE
-            // ==========================================
+        
             ESP_LOGI(TAG, "EMITTING stored signal...");
             
             rmt_transmit_config_t tx_config = {
