@@ -1,0 +1,3 @@
+# Ignore ESP-IDF and CMake build directories
+**/build/
+build/
