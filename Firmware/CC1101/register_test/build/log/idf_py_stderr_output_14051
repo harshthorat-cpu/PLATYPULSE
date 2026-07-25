@@ -1,0 +1,2 @@
+Command: ninja all
+ninja: error: '/Users/apple/PLATYPULSE/firmware /CC1101/register/main/register.c', needed by 'esp-idf/main/CMakeFiles/__idf_main.dir/register.c.obj', missing and no known rule to make it

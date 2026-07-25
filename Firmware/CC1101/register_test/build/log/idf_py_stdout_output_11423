@@ -1,0 +1,369 @@
+Command: /Users/apple/.espressif/python_env/idf5.5_py3.14_env/bin/python /Users/apple/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbserial-0001 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /Users/apple/PLATYPULSE/firmware /CC1101/register/build/register.elf /Users/apple/PLATYPULSE/firmware /CC1101/register/build/bootloader/bootloader.elf -m '/Users/apple/.espressif/python_env/idf5.5_py3.14_env/bin/python' '/Users/apple/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 16 2026 16:55:41[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b440h ( 46144) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=0001b468 vaddr=3ffb0000 size=02560h (  9568) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d9d0 vaddr=40080000 size=02648h (  9800) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15d7ch ( 89468) map[0m
+[0;32mI (146) esp_image: segment 4: paddr=00035da4 vaddr=40082648 size=0c69ch ( 50844) load[0m
+[0;32mI (166) esp_image: segment 5: paddr=00042448 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (173) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (173) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (192) cpu_start: Pro cpu start user code[0m
+[0;32mI (192) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (193) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     register[0m
+[0;32mI (197) app_init: App version:      df4da12-dirty[0m
+[0;32mI (201) app_init: Compile time:     Jul 16 2026 16:55:36[0m
+[0;32mI (206) app_init: ELF file SHA256:  7e986080d...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (214) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFB2E60 len 0002D1A0 (180 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 4008ECE4 len 0001131C (68 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (278) main_task: Started on CPU0[0m
+[0;32mI (288) main_task: Calling app_main()[0m
+[0;32mI (288) CC1101: SPI Initialized[0m
+[0;32mI (288) CC1101: CC1101 Reset Complete[0m
+[0;32mI (288) CC1101: CC1101 VERSION Register = 0xFF[0m
+[1;31mE (288) CC1101: SPI communication failed. Check:[0m
+[1;31mE (298) CC1101: 1. Wiring[0m
+[1;31mE (298) CC1101: 2. Power supply[0m
+[1;31mE (298) CC1101: 3. Chip Select (CS)[0m
+[1;31mE (298) CC1101: 4. MISO/MOSI connections[0m
+E BOD: Brownout detector was triggered
+
+
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (56) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (56) boot: compile time Jul 16 2026 16:55:41[0m
+[0;32mI (56) boot: Multicore bootloader[0m
+[0;32mI (58) boot: chip revision: v3.1[0m
+[0;32mI (61) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (65) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (68) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (72) boot: Enabling RNG early entropy source...[0m
+[0;32mI (77) boot: Partition Table:[0m
+[0;32mI (79) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (85) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (92) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (99) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (105) boot: End of partition table[0m
+[0;32mI (108) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b440h ( 46144) map[0m
+[0;32mI (132) esp_image: segment 1: paddr=0001b468 vaddr=3ffb0000 size=02560h (  9568) load[0m
+[0;32mI (136) esp_image: segment 2: paddr=0001d9d0 vaddr=40080000 size=02648h (  9800) load[0m
+[0;32mI (140) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15d7ch ( 89468) map[0m
+[0;32mI (174) esp_image: segment 4: paddr=00035da4 vaddr=40082648 size=0c69ch ( 50844) load[0m
+[0;32mI (194) esp_image: segment 5: paddr=00042448 vaddr=50000000 size=00020h (    32) load[0m
+[1;31mE (194) esp_image: Checksum failed. Calculated 0x63 read 0x58[0m
+[1;31mE (196) boot: Factory app partition is not bootable[0m
+[1;31mE (200) boot: No bootable app partitions in the partition table[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+flash read err, 988
+ets_main.c 384 
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+csum err:0x15!=0x14
+ets_main.c 384 
+ets Jul 2��ets Jul 2�ets Jul rets Jul 2ets Jul v�ets Jul 2yets Jul r�ets Jul 2�ets Jul v�ets Jul ryets Jul 2�ets Jul 2yets Jul 2�ets Jul 2{�ets Jul 29ets Jul 29�ets Jul 29�ets Jul 29�ets Jul 2{�ets Jul 29�ets Jul 29�ets Jul 2y�ets Jul 29�ets Jul 29�ets Jul 29`rets Jul 29�ets Jul 29�ets Jul 29 ets Jul 29�ets Jul 2�ets Jul 29ets Jul 29�ets Jul 29 ets Jul 2�ets Jul 29�ets Jul 2�ets Jul v�ets Jul 2ets Jul 29'��Ғ�Ң�j
+
+rst:0x3 <SW_RESET),boot:0x13 (Sp�MQ}1M!}	==Q)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 16 2026 16:55:41[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b440h ( 46144) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001b468 vaddr=3ffb0000 size=02560h (  9568) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001d9d0 vaddr=40080000 size=02648h (  9800) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15d7ch ( 89468) map[0m
+[0;32mI (145) esp_image: segment 4: paddr=00035da4 vaddr=40082648 size=0c69ch ( 50844) load[0m
+[0;32mI (165) esp_image: segment 5: paddr=00042448 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (173) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (173) boot: Disabling RNG early entropy source...[0m
+[0;32mI (183) cpu_start: Multicore app[0m
+[0;32mI (192) cpu_start: Pro cpu start user code[0m
+[0;32mI (192) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (192) app_init: Application information:[0m
+[0;32mI (192) app_init: Project name:     register[0m
+[0;32mI (196) app_init: App version:      df4da12-dirty[0m
+[0;32mI (201) app_init: Compile time:     Jul 16 2026 16:55:36[0m
+[0;32mI (206) app_init: ELF file SHA256:  7e986080d...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (214) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFB2E60 len 0002D1A0 (180 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 4008ECE4 len 0001131C (68 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (278) main_task: Started on CPU0[0m
+[0;32mI (288) main_task: Calling app_main()[0m
+[0;32mI (288) CC1101: SPI Initialized[0m
+[0;32mI (288) CC1101: CC1101 Reset Complete[0m
+[0;32mI (288) CC1101: CC1101 VERSION Register = 0x00[0m
+[1;31mE (288) CC1101: SPI communication failed. Check:[0m
+[1;31mE (298) CC1101: 1. Wiring[0m
+[1;31mE (298) CC1101: 2. Power supply[0m
+[1;31mE (298) CC1101: 3. Chip Select (CS)[0m
+[1;31mE (298) CC1101: 4. MISO/MOSI connections[0m
+E BOD: Brownout detector was triggered
+
+
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (56) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (56) boot: compile time Jul 16 2026 16:55:41[0m
+[0;32mI (56) boot: Multicore bootloader[0m
+[0;32mI (58) boot: chip revision: v3.1[0m
+[0;32mI (61) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (65) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (68) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (72) boot: Enabling RNG early entropy source...[0m
+[0;32mI (77) boot: Partition Table:[0m
+[0;32mI (79) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (85) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (92) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (99) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (105) boot: End of partition table[0m
+[0;32mI (108) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b440h ( 46144) map[0m
+[0;32mI (132) esp_image: segment 1: paddr=0001b468 vaddr=3ffb0000 size=02560h (  9568) load[0m
+[0;32mI (136) esp_image: segment 2: paddr=0001d9d0 vaddr=40080000 size=02648h (  9800) load[0m
+[0;32mI (140) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15d7ch ( 89468) map[0m
+[0;32mI (174) esp_image: segment 4: paddr=00035da4 vaddr=40082648 size=0c69ch ( 50844) load[0m
+[0;32mI (194) esp_image: segment 5: paddr=00042448 vaddr=50000000 �ize=00020h (    32) load[0m
+[1;31mE (194) esp_image: Checksum failed. Calculated 0xf1 read 0x58[0m
+[1;31mE (196) boot: Factory app partition is not bootable[0m
+[1;31mE (200) boot: No bootable app partitions in the partition table[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x0p,d_drv:0x00,cs0_drv:px00,hd_drv:0x00,wp_d~:0x00
+mode:DIO, clock iv:2
+load:0x3fff00p,len:6380
+ho 0 ta�l`12 room 4
+load:0x400x000,len:15916
+load:04����bb��:3860
+][*��:0x74!=0x14
+et�main.c 384 
+ets Jul 2�/�����Ң�j
+
+rs��O�WDT_SYS_RESET���:0x13 (SPI_FAST��%==Q)
+configsip:�A%]A:0xee
+clk_dr���,q_drv:0x00,d_dets Jul 2e� Jul �ets Jul �ets Jul`2ets Jul`rets Jul`�ets Jul �ets Jul`rets Jul �ets Jul rets Jul rets Jul rets Jul`2ets Jul`�ets Jul 2ets Jul rets Jul 3ets Jul �ets Jul rets Jul`rets Jul 2ets Jul`2ets Jul`rets Jul �ets Jul rets Jul vets Jul`rets Jul �ets Jul rets Jul 2�ets Jul {ets Jul rets Jul 2�ets Jul �ets Jul rets Jul rets Jul`2ets Jul rets Jul rets Jul vets Jul vets Jul 2ets Jul re� Jul r�ets Jul r�ets Jul vY� Jul rets Jul 2�ets Jul 2�ets Jul 2�ets Jul v�ets Jul 29�ets Jul 29�ets Jul 29ets Jul 2y�ets Jul 2�ets Jul 29�ets Jul 29 2�ets Jul 29�ets Jul 29 r�ets Jul r9ets Jul 2;�ets Jul 29 v�ets Jul 29`ets Jul 2{�ets Jul 29 r�ets Jul 29 2pets Jul 29 2�ets Jul 2y`ets Jul 29 2�ets Jul 29 r�ets Jul 29 2�ets Jul 29 2�ets Jul 29 2�ets Jul 29 2pets Jul 29 2�ets Jul 29 2�ets Jul 29 r�ets Jul 29 2ets Jul 29 2pets Jul 29 2�ets Jul 29 2�ets Jul 29 2�ets Jul 29 r�ets Jul 29 2�ets Jul 29 2�ets Jul 29 r�ets Jul 29 2�ets Jul 29 2�ets Jul 29 2�ets Jul v�ets Jul 29 2�ets Jul 29 r�ets Jul 29 r�ets Jul 29 2�ets Jul 29 2�ets Jul 29 2�ets Jul 29 2�ets Jul 29 r�ets Jul 29 r�ets Jul 29 r�ets Jul 29 2�ets Jul 29 2�ets Jul 29 2�ets Jul 29 2�ets Jul 29 2�ets Jul 29 r�ets Jul 29 2�ets Jul 29 2�ets Jul 29 r�ets Jul 29 2�ets Jul 29 2�ets Jul 2ets Jul 29 2�ets Jul 2ets Jul 29 2�ets Jul 29 2�ets Jul 29 2�ets Jul 29 r�ets Jul 2ets Jul 29 r�ets Jul 29 2�ets Jul 29 v�ets Jul 29 2�ets Jul 29 2�ets Jul 29 2�ets Jul 29 r�ets Jul 29 2�ets Jul 29 2�ets Jul 29 r�ets Jul 29 r�ets Jul 2ets Jul 29 2�ets Jul vets Jul 29 2�ets Jul 29 2�ets Jul 29 2�ets Jul 29 6�ets Jul 29 r�ets Jul 29 2�ets Jul 29 v�ets Jul 29 2�ets Jul 29 2�ets Jul 29 2�ets Jul 29 r�ets Jul 29 2ets Jul 29 rets Jul 29 2ets Jul 29 2�ets Jul`rets Jul 29 rets Jul �ets Jul 29 2ets Jul 29 vets Jul 29 vets Jul �ets Jul 29 2ets Jul 29 2ets Jul 29`2ets Jul 29 rets Jul 29 rets Jul �ets Jul 29 2ets Jul 29`rets Jul 29 2ets Jul 29 2ets Jul 29 2ets Jul 29 �ets Jul 29 rets Jul �ets Jul 29`2ets Jul 29 2ets Jul 29 rets Jul 29 rets Jul 29 �ets Jul 29 �ets Jul �ets Jul 29`�ets Jul 29 �ets Jul 29 2ets Jul 29 �ets Jul 29 �ets Jul 29 rets Jul 29 �ets Jul �ets Jul 29 �ets Jul �ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul 29`�ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul 29`�ets Jul 29 �ets Jul 29`�ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul �ets Jul 29`�ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul 29`�ets Jul 29`�ets Jul 29 �ets Jul 29`�ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul 29`�ets Jul 29 �ets Jul 29`�ets Jul 29`�ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul 29`�ets Jul 29`�ets Jul 29`�ets Jul 29 �ets Jul 29 �ets Jul 29`�ets Jul 29 �ets Jul 29`�ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul 29`�ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul`ets Jul 29 �ets Jul 29 �ets Jul 29 �ets Jul ets Jul 29 �ets Jul 29 ets Jul 29`�ets Jul 29 �ets Jul 29`�ets Jul`ets Jul 29 �ets Jul 29`�ets Jul 29 ets Jul 29 �ets Jul 29 ets Jul`ets Jul 29 �ets Jul 29`�ets Jul 29 ets Jul 29 ets Jul 29`ets Jul�ets Jul 29`ets Jul 29 -� Jul 29`�ets Jul 29`ets Jul 29`ets Jul 29 ets Jul 29 ets Jul 29`ets Jul 29`ets Jul 29 �ets Jul 29 ets Jul 29 ets Jul 29`ets Jul 29`ets Jul 29 ets Jul 29`ets Jul 29`ets Jul 29� Jul 29 ets Jul 29`ets Jul 29`ets Jul 29Y� Jul 29`ets Jul 29 ets Jul 29`ets Jul 29`ets Jul�ets Jul 29e� Jul 29 ets Jul 29�ets Ju��ets Juets Jul 29`ets Jul 29�ets Jul 29�ets Jul 29�ets Jul 29�ets Jul 29�ets Jul 29�ets Jul 29�ets Jul 29�ets Juets Jul 29�ets Jul 29�ets Jul 29�ets Jul 29�ets Jul 29�ets Jul 29�ets Jul 29�ets Jul 29�ets Jul 29�ets Jul 29�ets Jul�ets Jul 2y�ets Jul 2y�ets Jul 2y�ets Jul 29�ets Jul 29�ets Jul 29�ets Jul�ets Jul 29�ets Jul�ets Jul 2y�ets Jul 29�ets Jul�ets Jul�ets Jul 29�ets Jul�ets Jul�ets Jul 29�ets Jul 29�ets Jul 29�ets Jul 2y�ets Jul�ets Jul�ets Jul�ets Jul�ets Jul 29�ets Jul 2yets Jul 29ets Jul 2yets Jul�ets Juets Juets Ju�ets Jul�ets Jul 2yets Jul�ets Ju�ets Jul�ets Jul�ets Jul 29ets Juets Ju�ets Jul 29ets Jul 29ets Jul�ets Jul 2yets Julets Julets Ju�ets Jul�ets Jul�ets Ju�ets Ju�ets Jue� Jue� Ju�ets Julets J?ets Ju�ets Ju�ets Juets Ju�ets JuY� Ju�ets Julets Ju�ets Ju�ets Ju�ets Julets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Jul 2�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets J�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets J��ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets J��ets J��ets Ju�ets J��ets Ju�ets Ju�ets J��ets Juets Juets J�ets J�ets Ju�ets Juets Ju�ets Ju�ets Ju�ets Ju�ets J�ets J?ets J?ets Ju�ets Ju�ets Ju�ets J��ets Ju�ets Ju�ets Ju�ets Ju�ets J?ets Ju�ets Ju�ets J?ets Ju�ets Ju�ets Ju�ets Ju�ets J��ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Juets J��ets J?ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets J?ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets J?ets Ju�ets Ju�ets Ju�ets J?ets Ju�ets J��ets J?ets J?ets Ju�ets Ju�ets Ju�ets J��ets J�ets J�ets J�ets Ju�ets Ju�ets J�ets Ju�ets J�ets Ju�ets J?ets J�ets J��ets J?ets J?ets Ju�ets J?ets Ju�ets Ju�ets Ju�ets J��ets Ju�ets Ju�ets Ju�ets J?ets Ju�ets Ju�ets Ju�ets J?ets J?ets J?ets J?ets J?ets Ju�ets Ju�ets J�ets J?ets Ju�ets J?ets Ju�ets Ju�ets J��ets Ju�ets Ju�ets J��ets Ju�ets Ju�ets Ju�ets J?ets Ju�ets J?ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets Ju�ets J��ets J�ets Ju�ets Ju�ets Ju�ets J?ets Ju�ets J?ets J?ets Ju�ets J��ets J��ets Ju�ets J��ets Ju�ets Ju�ets J��ets J?ets Ju�ets Ju�ets J?ets J�ets Ju�ets Ju�ets J?ets J�ets J�ets Ju�ets Ju�ets J��ets J?ets Ju�ets Ju�ets J�ets Ju�ets J��ets J��ets Ju�ets Ju�ets Ju�ets Ju�ets J��ets Ju�ets J�ets Ju�ets J�ets Ju�ets Ju�ets J�ets J�ets J��ets Ju�ets J�ets J�ets J�ets J�ets J�ets Ju�ets J�ets J�ets Jets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets Juets Juets Juets J�ets J�ets J�ets Juets Juets J�ets Juets J�ets Juets J�ets Juets Juets J�ets Jets J�ets J�ets J�ets J�ets Juets J�ets J�ets J�ets J�ets J�ets Juets J�ets J�ets J�ets J�ets J�ets J�ets J�ets Juets J�ets J�ets J�ets Jets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets Jts J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets Jets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets Juets J�ets J�ets J�ets ��ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets Jets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets Juets Juets J�ets J��ets J�ets Juets J�ets Ju�ets Ju�ets J�ets J�ets J�ets Juets J�ets Juets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets �ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets J�ets Jets J�ets J�ets ��ets J�ets J�ets J�ets J�ets ��ets ��ets ��ets J�ets J�ets Jets ��ets J�ets Jets Jets J�ets Jets ��ets Jets J�ets J�ets J�ets �ets J�ets �ets ��ets J�ets J�ets ��ets ��ets ��ets J�ets ��ets J�ets J�ets Jets J�ets J�ets �ets ��ets J�ets Jets J�ets �ets �ets �ets J�ets J�ets ��ets �ts J�ets J�ets J�ets Jets J�ets Jets �ets J�ets Je� J�ets J�ets ��ets J�ets J�ets �ets J�ets ��ets �ets �ets �ets J�ets ��ets �ets �ets J�ets ��ets J�ets ��ets Jts J�ets J�ets ��ets �ets �ets J�ets �ets J�ets J�ets Jets �ets J�ets �ets J�ets �ets J�ets J�ets J�ets �ets �ets J�ets �ets �ets �ets J�ets �ets J�ets ��ets J�ets �ets Je� Jts �ets �ets J�ets �ets J�ets J�ets �ets Jets J�ets J�ets J�ets �ets �ets Jets �ets �ets �ets Jets �ets J�ets �ets Jets �ets Jets �ets �ets �ets Jets Jets �ets Jets �ets �ets Jets Jets J�ets �ets �ets �ets �ets �ets �ets �ets �ets �ets �ets �ets �ets �ets Jets �ets Jets �ets �ets Jets Jets Jets Jets Jets J�ets �ets �ets Jets Jets �ets Jets �ets �ets �ets Jets Jets �ets �ets �ets Jets �ets �ets �ets �ets �ets �ets J�ets �ets Jets Jets �ets Jets Jets �ets �ets �ets �ets �ets Jets �ets Jets �ets Jets �ets Jets Jets Je� �ets �ets Jets Jets �ets Jets �ets Jets �ets �ets Jets �ets Jets Jets �ets Jets Jets Jets �ets �ets �ets J�ets �ets Jets �ets Jets Jts �ets Jets Jets J�ets Jets Jets Jets �ets �ets J�ets �ets �ets Jets �ets J�ets Jets Jets J�ets �ets �ets J�ets �ets J�ets Jets �ets �ets Jets J�ets Jets �ets �ets Jets �ets �ets �ets Jets �ets �ets �ets �ets �ets Jets �ets �ets J�ets J�ets �ets J�ets �ets �ets �ets J�ets �ets J�ets Jets J�ets �ets �ets J�ets Jets �ets �ets �ets �ets Je� �ets J�ets �ets Je� J�ets ��ets �ets �ets J�ets ��ets �ets Jets �ets �ets �ets �e� Jets ��ets J�ets �ets Je� J�ets �ets J�ets J�ets �ets J�ets Jets �ets J�ets J�ets ��ets J�ets �ets J�ets �ets �ets �ets �ets J�ets �ets �ets J�ets �ets �ets J�ets ��ets �ets �ets ��ets J�ets ��ets J�ets Jets Jets J�ets �ets Jets J�ets �ets �ets Je� J�ets J�ets �ets ��ets �ets �ets J�ets Jts �ets �ets �ets J�ets J�ets ��ets �e� J�ets Jts �ets J�ets Jets J�ets �ets Jets Jets J�ets Jets �ets �ets �ets J�ets Jets �ets �ets Jets Jets �ets Jets Jets Jets Jets �ets �ets Jets Jets Jets Jets Jets �ets �ets Jets Jets �ets �ets Jets Jets Jets Jets Jets Jets Jets �ets Jets �ets Jets Jets Jets �ets Jets Jets Jets Jets �ets �ets �ets �ets �ets �ets Jets Jets �ets �ets �ets Jets Jets Jets �ets �ets �ets �ets Jets �ets �ets Jets �ets �ets Jets �ets J�ets Jets Jets �ets �ets �ets �ets �ets �ets Jets �ets �ets �ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 16 2026 16:55:41[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b440h ( 46144) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001b468 va�dr=3ffb0000 size=026h (  9568) load[0m
+Y x107) esp_image: segmon| 2: paddr=0001d9dp�addr=40080000 size=02648h (  9800) load
+E(111) esp_image: invalid segment length pffffffff
+[1;31mE (112) �t: Factory app part{tyon is not bootab�VE (116) boot: No ����(,� app partitio?��� partition ta�H�ets Jul`�ets Jul 29 �ets Jul 29`{���Ң�j[0m
+
+rst:0x�_RESET),boot:0x12`�%}MQ}1M!}	==Q)
+�˙��ͥ�: 0, SPIWP:0�e
+clk_drv:0x00,q_d�v:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0xffffffff,len:-1
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (30) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jul 16 2026 16:55:41[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b440h ( 46144) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=0001b468 vaddr=3ffb0000 size=02560h (  9568) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d9d0 vaddr=40080000 size=02648h (  9800) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15d7ch ( 89468) map[0m
+[0;32mI (146) esp_image: segment 4: paddr=00035da4 vaddr=40082648 size=0c69ch ( 50844) load[0m
+[0;32mI (166) esp_image: segment 5: paddr=00042448 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (174) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (184) cpu_start: Multicore app[0m
+[0;32mI (193) cpu_start: Pro cpu start user code[0m
+[0;32mI (193) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (193) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     register[0m
+[0;32mI (197) app_init: App version:      df4da12-dirty[0m
+[0;32mI (201) app_init: Compile time:     Jul 16 2026 16:55:36[0m
+[0;32mI (206) app_init: ELF file SHA256:  7e986080d...[0m
+[0;32mI (211) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (214) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 3FFB2E60 len 0002D1A0 (180 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 4008ECE4 len 0001131C (68 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (263) spi_flash: flash io: dio[0m
+[0;33mW (266) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (278) main_task: Started on CPU0[0m
+[0;32mI (288) main_task: Calling app_main()[0m
+[0;32mI (288) CC1101: SPI Initialized[0m
+[0;32mI (288) CC1101: CC1101 Reset Complete[0m
+[0;32mI (288) CC1101: CC1101 VERSION Register = 0x00[0m
+[1;31mE (288) CC1101: SPI communication failed. Check:[0m
+[1;31mE (298) CC1101: 1. Wiring[0m
+[1;31mE (298) CC1101: 2. Power supply[0m
+[1;31mE (298) CC1101: 3. Chip Select (CS)[0m
+[1;31mE (298) CC1101: 4. MISO/MOSI connections[0m
+E BOD: Brownout detector was triggered
+
+
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (56) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (56) boot: compile time Jul 16 2026 16:55:41[0m
+[0;32mI (56) boot: Multicore bootloader[0m
+[0;32mI (58) boot: chip revision: v3.1[0m
+[0;32mI (61) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (65) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (68) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (72) boot: Enabling RNG early entropy source...[0m
+[0;32mI (77) boot: Partition Table:[0m
+[0;32mI (79) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (85) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (92) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (99) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (105) boot: End of partition table[0m
+[0;32mI (108) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b440h ( 46144) map[0m
+[0;32mI (132) esp_image: segment 1: paddr=0001b468 vaddr=3ffb000&���=02560h (  9568) load[0m
+[0;32mI (136) esp_image: segment 2: paddr=0001d9d0 vaddr=40080000 size=02648h (  9800) load[0m
