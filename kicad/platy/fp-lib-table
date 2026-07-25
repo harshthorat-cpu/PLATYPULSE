@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "platy") (type "KiCad") (uri "/Users/apple/PLATYPULSE/kikad/platy") (options "") (descr ""))
+)

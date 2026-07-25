@@ -1,0 +1,6 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "custom kicad modules") (type "KiCad") (uri "C:/Users/Lucky/OneDrive/Desktop/custom kicad modules.kicad_sym") (options "") (descr ""))
+	(lib (name "custom") (type "KiCad") (uri "C:/Users/Lucky/OneDrive/Desktop/custom.kicad_sym") (options "") (descr ""))
+	(lib (name "pn532_custom") (type "KiCad") (uri "C:/Users/Lucky/OneDrive/Desktop/pn532_custom.kicad_sym") (options "") (descr ""))
+)
