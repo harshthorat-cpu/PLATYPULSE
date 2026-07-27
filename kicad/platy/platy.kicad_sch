@@ -9675,10 +9675,6 @@
 		(uuid "3fe43010-8c9e-44e4-9800-00f2ff96fa58")
 	)
 	(no_connect
-		(at 304.8 166.37)
-		(uuid "420f0569-15ef-4431-bc4c-b7bd31a7b190")
-	)
-	(no_connect
 		(at 99.06 212.09)
 		(uuid "4eb984fa-1f66-43e3-976a-7561f277b3f3")
 	)
@@ -11394,16 +11390,6 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 166.37) (xy 318.77 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5dcde57f-a961-4168-88d8-40a6b381d1fb")
-	)
-	(wire
-		(pts
 			(xy 114.3 55.88) (xy 119.38 55.88)
 		)
 		(stroke
@@ -12914,6 +12900,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 295.91) (xy 213.36 295.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4835739-0881-4591-b139-a49f5c329cbb")
+	)
+	(wire
+		(pts
 			(xy 213.36 203.2) (xy 219.71 203.2)
 		)
 		(stroke
@@ -13354,6 +13350,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 271.78) (xy 212.09 271.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da898380-0395-4ae7-87e8-8aeccecc26ee")
+	)
+	(wire
+		(pts
 			(xy 212.09 58.42) (xy 212.09 60.96)
 		)
 		(stroke
@@ -13491,6 +13497,16 @@
 			(type default)
 		)
 		(uuid "e414e1f7-76ce-41e2-aa33-a203740af0b7")
+	)
+	(wire
+		(pts
+			(xy 303.53 166.37) (xy 318.77 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4298758-b741-43d0-abc4-c6b93ed3b81b")
 	)
 	(wire
 		(pts
@@ -14073,16 +14089,6 @@
 		)
 		(uuid "246c8b38-c52f-46f6-bdec-d7c4773b44fb")
 	)
-	(label "MISO"
-		(at 297.18 55.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2615f8ae-2b08-499c-b353-8503b487ec04")
-	)
 	(label "SD_cs"
 		(at 331.47 39.37 180)
 		(effects
@@ -14323,6 +14329,16 @@
 		)
 		(uuid "6136b5d3-ab0b-4251-9feb-cc42ae4ffc83")
 	)
+	(label "MISO"
+		(at 297.18 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "623922f9-823c-4655-bc68-3e6a51658fab")
+	)
 	(label "3v3"
 		(at 297.18 38.1 180)
 		(effects
@@ -14472,6 +14488,16 @@
 			(justify right bottom)
 		)
 		(uuid "81ffdff6-ee76-430b-8493-f430eb28c918")
+	)
+	(label "led"
+		(at 297.18 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "842828d7-f012-4ebc-b949-8c83c0234015")
 	)
 	(label "BAT+"
 		(at 377.19 340.36 180)
@@ -14823,6 +14849,16 @@
 		)
 		(uuid "cc817dd0-c798-457c-aa7d-3871bdc56cf5")
 	)
+	(label "led"
+		(at 303.53 166.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d0aed6ac-b133-446f-9623-f12af9e51061")
+	)
 	(label "USB_D+"
 		(at 322.58 330.2 0)
 		(effects
@@ -14983,16 +15019,6 @@
 			(justify left bottom)
 		)
 		(uuid "ea2a8e3e-944f-41d2-8740-9e3a6ab4a876")
-	)
-	(label "3v3"
-		(at 297.18 58.42 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ea72cb96-cca1-4d81-bfcc-588ca9875ec2")
 	)
 	(label "3v3"
 		(at 111.76 179.07 0)
@@ -26177,7 +26203,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_DIP_SPSTx02_Slide_6.7x6.64mm_W6.73mm_P2.54mm_LowProfile_JPin"
 			(at 74.93 306.07 0)
 			(hide yes)
 			(show_name no)
