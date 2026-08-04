@@ -1960,6 +1960,192 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Conn_Coaxial"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0.254 3.048 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_Coaxial"
+				(at 2.921 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_Coaxial_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.778 0)
+					(mid 0.222 -1.8079)
+					(end -1.778 -0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 0.508)
+					(mid 0.2221 1.8084)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Conn_Coaxial_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "In"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Ext"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
@@ -9237,12 +9423,6 @@
 		(uuid "fc9ae93e-6abe-4eac-a322-0d9bf6e5ec15")
 	)
 	(junction
-		(at 213.36 209.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "02326603-0a1f-4797-90c4-d69afdefbb67")
-	)
-	(junction
 		(at 72.39 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9495,6 +9675,12 @@
 		(uuid "a8c8bac2-23f9-4ce5-bce5-d87d425cd333")
 	)
 	(junction
+		(at 213.36 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a917f08c-298c-4153-b8cc-a3a38959c2df")
+	)
+	(junction
 		(at 59.69 248.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9738,6 +9924,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 215.9) (xy 224.79 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03990c82-d41b-4ff3-9e79-b32cba92d6be")
+	)
+	(wire
+		(pts
 			(xy 146.05 214.63) (xy 146.05 215.9)
 		)
 		(stroke
@@ -9765,6 +9961,16 @@
 			(type default)
 		)
 		(uuid "04ed6bc9-ff6e-4e69-8890-631b9a8900e6")
+	)
+	(wire
+		(pts
+			(xy 224.79 212.09) (xy 238.76 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0530554b-2d3b-40b4-9cfb-c0ec4b036e72")
 	)
 	(wire
 		(pts
@@ -10298,7 +10504,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 215.9) (xy 219.71 215.9)
+			(xy 213.36 215.9) (xy 224.79 215.9)
 		)
 		(stroke
 			(width 0)
@@ -10405,16 +10611,6 @@
 			(type default)
 		)
 		(uuid "219ce2ac-6f41-41e7-8801-ae7b91bd3075")
-	)
-	(wire
-		(pts
-			(xy 213.36 203.2) (xy 213.36 209.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21db6a11-b123-4292-b7e7-2f3efe70d4fc")
 	)
 	(wire
 		(pts
@@ -10848,7 +11044,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 209.55) (xy 213.36 215.9)
+			(xy 213.36 203.2) (xy 213.36 209.55)
 		)
 		(stroke
 			(width 0)
@@ -11688,6 +11884,16 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 209.55) (xy 213.36 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "732f9e34-2062-4cff-a9ef-b7fed961d8b7")
+	)
+	(wire
+		(pts
 			(xy 74.93 44.45) (xy 74.93 36.83)
 		)
 		(stroke
@@ -11725,16 +11931,6 @@
 			(type default)
 		)
 		(uuid "74d036de-0005-4426-8e92-1acc6f9b3563")
-	)
-	(wire
-		(pts
-			(xy 213.36 209.55) (xy 219.71 209.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "754e2262-220d-4c4f-8b5c-3370575681e6")
 	)
 	(wire
 		(pts
@@ -11928,6 +12124,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 203.2) (xy 233.68 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81f6aa2e-cbe2-4708-9ced-25d327feb18c")
+	)
+	(wire
+		(pts
 			(xy 213.36 219.71) (xy 196.85 219.71)
 		)
 		(stroke
@@ -12055,16 +12261,6 @@
 			(type default)
 		)
 		(uuid "8838cd8e-9fa6-462f-93e7-8b7216d98691")
-	)
-	(wire
-		(pts
-			(xy 196.85 209.55) (xy 213.36 209.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88545ede-c2c8-497b-97ba-11e77e1940b4")
 	)
 	(wire
 		(pts
@@ -12868,7 +13064,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 203.2) (xy 219.71 203.2)
+			(xy 213.36 203.2) (xy 233.68 203.2)
 		)
 		(stroke
 			(width 0)
@@ -12905,6 +13101,16 @@
 			(type default)
 		)
 		(uuid "c70d30c2-5f49-4f57-9715-f7c984d16032")
+	)
+	(wire
+		(pts
+			(xy 213.36 209.55) (xy 213.36 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c715d5c9-d0d6-47b8-b0e9-063f8e5fa39a")
 	)
 	(wire
 		(pts
@@ -13895,6 +14101,16 @@
 			(type default)
 		)
 		(uuid "ff44fa3d-c0da-4ac0-afa6-d59129fca7bc")
+	)
+	(wire
+		(pts
+			(xy 238.76 212.09) (xy 238.76 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff8694bb-259f-4d0f-97be-85c48db4094a")
 	)
 	(wire
 		(pts
@@ -16030,7 +16246,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_HC49-U_Vertical"
+		(property "Footprint" "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm"
 			(at 114.3 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -18126,6 +18342,88 @@
 			(project "platy"
 				(path "/d735ea85-ad76-451c-86ef-ab784456e68b"
 					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 238.76 205.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "39d415ad-85c3-406d-ace7-b27945d046e5")
+		(property "Reference" "J3"
+			(at 242.57 204.7631 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_Coaxial"
+			(at 242.57 207.3031 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical"
+			(at 238.76 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 238.76 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9b8116a1-3d8a-420e-8018-87ced3d88ae1")
+		)
+		(pin "1"
+			(uuid "c4f61c78-164b-4e73-9520-177d90390473")
+		)
+		(instances
+			(project "platy"
+				(path "/d735ea85-ad76-451c-86ef-ab784456e68b"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -21641,7 +21939,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "RF_Antenna:Texas_SWRA416_868MHz_915MHz"
+		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132134_Vertical"
 			(at 142.24 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -23830,7 +24128,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_HC49-U_Vertical"
+		(property "Footprint" "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm"
 			(at 78.74 248.92 0)
 			(hide yes)
 			(show_name no)
@@ -25937,7 +26235,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
 			(at 297.18 327.66 0)
 			(hide yes)
 			(show_name no)
