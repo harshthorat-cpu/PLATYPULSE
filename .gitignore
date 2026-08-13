@@ -1,0 +1,21 @@
+# Ignore ESP-IDF and CMake build directories
+# Build directories
+build/
+**/build/
+
+
+# KiCad local user settings and project layouts 
+*.kicad_prl
+
+# macOS folder attributes
+.DS_Store
+
+
+# KiCad backups and auto-saves
+*-backups/
+*.bak
+*.bck
+
+
+# KiCad lock files (prevents the error you had earlier!)
+*.lck
