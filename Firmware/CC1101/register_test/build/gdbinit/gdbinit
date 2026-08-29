@@ -1,0 +1,2 @@
+source /Users/apple/PLATYPULSE/firmware /CC1101/register/build/gdbinit/symbols
+source /Users/apple/PLATYPULSE/firmware /CC1101/register/build/gdbinit/connect
