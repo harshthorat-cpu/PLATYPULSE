@@ -7,6 +7,9 @@
 ![KiCad](https://img.shields.io/badge/KiCad-314CB0?style=for-the-badge&logo=kicad&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 
+
+<img width="966" height="540" alt="Screenshot 2026-08-29 at 9 50 27 PM" src="https://github.com/user-attachments/assets/c3281e35-4fd6-4986-8fc6-04aece5b865a" />
+
 > A unified handheld platform for RF, RFID/NFC, and IR wireless experimentation — built on the ESP32-S3.
 
 ## Problem Statement
@@ -55,20 +58,67 @@ Platypulse is designed as a unified handheld platform that brings RF, RFID/NFC, 
 
 **Connecting to Wi-Fi via NFC** — demonstrates connecting to Wi-Fi directly using a single NFC sticker containing the required instructions, eliminating the need to manually enter the Wi-Fi password and enabling automated tasks.
 
-https://github.com/harshthorat-cpu/PLATYPULSE/raw/main/media/VID-20260731-WA0005.mp4
+
+https://github.com/user-attachments/assets/eea3f232-0957-4e07-8702-c358589d3c55
+
+
 
 **Transmitting an RF Signal** — demonstrates the transmission of an RF signal through the CC1101 module.
 
-https://github.com/harshthorat-cpu/PLATYPULSE/raw/main/media/20260806_185401.mp4
+
+
+https://github.com/user-attachments/assets/e0021282-87bb-4f81-9ff2-c89db1f22ec8
+
+
 
 **Receiving an RF Signal** — demonstrates the process of receiving an RF signal through the CC1101 module.
 
-https://github.com/harshthorat-cpu/PLATYPULSE/raw/main/media/VID-20260731-WA0034.mp4
+
+https://github.com/user-attachments/assets/8b9e34c6-dc06-4a26-969a-4266ece2f23d
+
+
 
 **Capturing & Emulating an IR Signal** — demonstrates capturing and emulating an IR signal, used here to change the AC temperature.
 
-https://github.com/harshthorat-cpu/PLATYPULSE/raw/main/media/IMG_7572.mov
 
+https://github.com/user-attachments/assets/e1bdd879-e367-4fc6-8ea2-27d7d49550e6
+
+
+## Repository Structure 
+```c
+PLATYPULSE
+├── Docs/
+│   └── Platypulse_Report 
+├── Firmware/
+│   ├── CC1101/                             
+│   │   ├── cc1101_ook_rx/
+│   │   │                        
+│   │   ├── gnu-radio-scripts/
+│   │   └── register_test/
+│   │       
+│   │                            
+│   ├── IR/                             
+│   │   ├── Receiver/
+│   │   │   └── receiver_test/
+│   │   ├── ir_transmitter/
+│   │   │                         
+│   │   └── store_and_emulate/
+│   │                        
+│   ├── PN532/                               
+│   │   └── testingcode/
+│   │                         
+│   └── UI/                                  
+│       └── ui_control/
+│           
+│                             
+├── PCB/
+│   └── kicad/
+│                               
+│           
+├── media/                                   
+├── .gitignore
+└── README.md
+```
 ## Installing
 
 *Get up and running with Platypulse in three simple steps.*
@@ -96,7 +146,7 @@ idf.py flash
 
 ## Authors
 
-*The minds behind Platypulse.*
+
 
 - [Harsh Thorat](https://github.com/harshthorat-cpu)
 - [Lucky Belel](https://github.com/belellucky-15)
